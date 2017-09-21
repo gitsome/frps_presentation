@@ -37,9 +37,18 @@ body {
 
 
 .parens {
-    color: #4a708a;
+    color: #7292a7;
+    font-size: 80% !important;
 }
-
+.emph {
+    color: #90d2ff;
+}
+.buttery {
+    color: #ffb800;
+}
+.reveal pre code {
+    padding: 15px !important;
+}
 /*********************************************
  * HEADERS
  *********************************************/
