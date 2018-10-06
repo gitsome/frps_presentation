@@ -33,20 +33,30 @@
 
                     <section data-background="images/title_slide_bg.jpg" data-background-repeat="repeat" data-background-size="300px">
 
-                        <h1 class="slide-title">UX Butter</h1>
-                        <h2>Reducing App Friction</h2>
-                        <p>
-                            <small>Created by <a href="http://johndavidfive.com" target="_blank">John Martin</a> / <a href="http://twitter.com/johndavidfive" target="_blank">@johndavidfive</a></small>
-                        </p>
+                        <h1 class="slide-title">Reducing Web Application Friction</h1>
+                        <h2>Making Web Apps Buttery Smooth</h2>
+                        <h3 style="color:#bf3e11; opacity: 1.0; text-shadow: 0px 0px 5px black; margin-top: 45px;">Desert Code Camp 2018</h3>
 
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Agenda</h1>
+                        <h2 class="slide-title">New Presentation... Who Dis?</h1>
+                        <h3>
+                            <a href="http://johndavidfive.com" target="_blank">John Martin</a> / <a href="http://twitter.com/johndavidfive" target="_blank">Twitter: @johndavidfive</a> / <a href="https://github.com/gitsome" target="_blank">Github: @gitsome</a>
+                        </h3>
                         <ul>
-                            <li>Define "Buttery"</li>
-                            <li>Discuss how to measure Butter</li>
-                            <li>How to improve Butteryness</li>
+                            <li>UX Developer @ Unicon ( <span style="color:gold">We're Hiring!</span> )</li>
+                            <li>Machine Learning / Graph Databases / AWS</li>
+                            <li>Got my start on the <a href="https://www.ticalc.org/archives/files/fileinfo/47/4762.html" target="_blank">Ti-82 Calculator</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="slide-title">What We Will Cover</h1>
+                        <ul>
+                            <li>Define "buttery smooth app"</li>
+                            <li>How to measure and improve smoothness</li>
+                            <li>Drizzle some butter on a sample app</li>
                         </ul>
                     </section>
 
@@ -55,21 +65,39 @@
                 <section>
 
                     <section data-background="images/title_slide_bg.jpg" data-background-repeat="repeat" data-background-size="300px">
-                        <h1 class="slide-title">When is UX Buttery?</h1>
+                        <h1 class="slide-title">When Is a Web App Buttery Smooth?</h1>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Subjective Definition:</h2>
-                        <p class="fragment fade-up">Users say experience is "SMOOTH".</p>
-                        <p class="fragment fade-up">Examples "SMOOTH" vs "NOT SMOOTH"</p>
+                        <h2 class="slide-title">It Starts With the First Load</h2>
+                        <ul>
+                            <li>FP: First Paint</li>
+                            <li>FCP: First Contentful Paint</li>
+                            <li>TTI: Time to Interactive</li>
+                        </ul>
+                        <p><small><a href="https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics" target="_blank">
+                            User-centric Performance Metrics: Philip Walton</a></small></p>
                     </section>
 
-                    <section data-background="images/smooth_1.gif" data-background-size="contain">
-                        <h1 class="slide-title">Smooth</h1>
+                    <section>
+                        <h2 class="slide-title">It Continues AFTER First Load</h2>
+                        <ul>
+                            <li>FPONV: First Paint On Next View</li>
+                            <li>FCPONV: First Contentful Paint On Next View</li>
+                            <li>TTIONV: Time to Interactive On Next View</li>
+                        </ul>
                     </section>
 
-                    <section data-background="images/not_smooth1.gif" data-background-size="contain">
-                        <h1 class="slide-title">NOT Smooth</h1>
+                    <section>
+                        <h2 class="slide-title">SMOOTH ( Subjective )</h2>
+                        <div class="fragment fade-up">
+                            <p>Users say experience "feels smooth"</p>
+                            <p>( you know it when you see it )</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="slide-title">Smooth vs NOT Smooth</h2>
                     </section>
 
                     <section data-background="images/smooth_2.gif" data-background-size="contain">
@@ -80,19 +108,19 @@
                         <h1 class="slide-title">NOT Smooth</h1>
                     </section>
 
-                    <section data-background="images/smooth3.gif" data-background-size="contain">
+                    <section data-background="images/smooth_1.gif" data-background-size="contain">
                         <h1 class="slide-title">Smooth</h1>
                     </section>
 
-                    <section>
+                    <section data-background="images/not_smooth1.gif" data-background-size="contain">
                         <h1 class="slide-title">NOT Smooth</h1>
-                        <img src="images/not_smooth3.webp">
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Objective Definition:</h2>
-                        <p class="fragment fade-up">Users experience minimal friction.</p>
-                        <p class="fragment fade-up">Friction is anything that impedes a user.</p>
+                        <h2 class="slide-title">SMOOTH ( Objective )</h2>
+                        <p class="fragment fade-up">Users experience minimal friction</p>
+                        <p class="fragment fade-up">Friction is anything that impedes a user</p>
+                        <p class="fragment fade-up">Static vs Transitional</p>
                     </section>
 
                 </section>
@@ -100,51 +128,32 @@
                 <section>
 
                     <section data-background="images/title_slide_bg.jpg" data-background-repeat="repeat" data-background-size="300px">
-                        <h1 class="slide-title">Finding Friction</h1>
+                        <h1 class="slide-title">Transitional Friction</h1>
+                        <h2>What is it?</h2>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Web UX Friction Types</h2>
+                        <h2 class="slide-title">Perceived Delay after User Interaction</h2>
                         <ul>
-                            <li class="fragment fade-up">Static Friction</li>
-                            <li class="fragment fade-up">Transitional Friction</li>
+                            <li>Delayed hover response</li>
+                            <li>Delayed click response</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Static Friction</h2>
-                        <img src="images/mcdonalds.png" class="fragment fade-up"/>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">Transitional Friction</h2>
+                        <h2 class="slide-title">Perceived JANK during a Transition</h2>
                         <ul>
-                            <li class="fragment fade-up">Incoherent / Gratuitous Transitions</li>
-                            <li class="fragment fade-up">Interaction Response Issues</li>
-                            <li class="fragment fade-up">Frame Rate Issues</li>
+                            <li>JANKY scrolling</li>
+                            <li>JANKY animations</li>
+                            <li>Incoherent / gratuitous animations</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Transitional Friction Challenge</h2>
-                        <p>Which has more friction (A) or (B)?</p>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">Transition (A)</h2>
-                        <img src="images/button_to_control_title.gif" style="max-width: 50%;"/>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">Transition (B)</h2>
-                        <img src="images/wine.gif" style="max-width: 50%;"/>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">Friction is Subjective</h2>
+                        <h2 class="slide-title">Definition of JANKY?</h2>
                         <ul>
-                            <li>(A) button changes role when clicked</li>
-                            <li>(B) assumes user knows bottle is clickable</li>
+                            <li class="fragment fade-up">Of extremely poor or unreliable quality</li>
+                            <li class="fragment fade-up">Slow or inconsistent frame rate</li>
                         </ul>
                     </section>
 
@@ -153,128 +162,57 @@
                 <section>
 
                     <section data-background="images/title_slide_bg.jpg" data-background-repeat="repeat" data-background-size="300px">
-                        <h1 class="slide-title">Where Does Friction Come From?</h1>
+                        <h1 class="slide-title">Transitional Friction</h1>
+                        <h2>Why Should We Care?</h2>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Sources of Friction</h2>
-                        <ul>
-                            <li>Hardware Level</li>
-                            <li>Platform Level ( <span class="parens">Browser / OS</span> )</li>
-                            <li>Application Level</li>
-                        </ul>
+                        <h2 class="slide-title">Is This a Case of Pre-Optimization?</h1>
+                        <blockquote><small>We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%. <div>-- Donald Knuth</div></small></blockquote>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Hardware Friction</h2>
-                        <ul>
-                            <li>Low Resolution / Contrast ( <span class="parens">static friction</span> )</li>
-                            <li>Poor Performance ( <span class="parens">transitional friction</span> )</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h3 class="slide-title">Hardware: Reduce Static Friction</h3>
-                        <img src="images/retina.jpg"/>
-                        <p>Improve Resolution / Contrast / Color</p>
-                    </section>
-
-                    <section>
-                        <h3 class="slide-title">Hardware: Reduce T-Fric 1</h3>
-                        <img src="images/jumping.gif"/>
-                        <p>Improve Display / Processor Performance</p>
-                    </section>
-
-                    <section>
-                        <h3 class="slide-title">Hardware: Reduce T-Fric 2</h3>
-                        <img src="images/promotion.gif"/>
-                        <p>Improve Display / IO Performance</p>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">Platform Friction</h2>
-                        <ul>
-                            <li>Bad Performance ( <span class="parens">transitional</span> )</li>
-                            <li>Hardware Interface ( <span class="parens">transitional / static</span> )</li>
-                            <li>Bad Abstractions ( <span class="parens">transitional / static</span> )</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">Reduce Platform Friction?</h2>
-                        <p>Pick a different platform!</p>
-                        <p><small>( <span class="parens">ie. get rid of IE ;-)</span> )</small></p>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">APP Friction</h2>
-                        <ul>
-                            <li>Complex Business Logic ( <span class="parens">s & t</span> )</li>
-                            <li>Poor Design ( <span class="parens">s & t</span> )
-                                <ul>
-                                    <li>Inconsistent Patterns ( <span class="parens">s</span> )</li>
-                                </ul>
-                            </li>
-                            <li>Novel Patterns ( <span class="parens">s</span> )</li>
-                            <li>Poor Performance ( <span class="parens">t</span> )</li>
-                            <li>Violating Platform Conventions ( <span class="parens">s & t</span> )</li>
-                            <li>Violating Hardware Conventions ( <span class="parens">s & t</span> )</li>
-                        </ul>
-                        <p><small>( <span class="parens">Complex business logic and poor design lead to bad code resuability</span> )</small></p>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">Our Focus for Today</h2>
-                        <h3>Application Transitional Friction</h3>
-                        <p><small>( <span class="parens">AKA: T-Fric</span> )</small></p>
-                    </section>
-
-                </section>
-
-
-                <section>
-
-                    <section data-background="images/title_slide_bg.jpg" data-background-repeat="repeat" data-background-size="300px">
-                        <h1 class="slide-title">Application T-Fric</h1>
-                        <h2>Responsiveness & Frame Rate</h2>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">Responsiveness</h2>
-                        <p>How fast system responds to user interaction.</p>
+                        <h2 class="slide-title">User Experience Basics</h2>
                         <ul>
                             <li><strong class="emph">100 ms</strong> the system is <strong>reacting instantaneously</strong></li>
                             <li><strong class="emph">1000 ms</strong> <strong>user's flow of thought</strong> uninterrupted</li>
-                            <li><strong class="emph">10 seconds</strong> <strong>keep attention</strong> on dialogue.</li>
+                            <li><strong class="emph">10 seconds</strong> <strong>keep attention</strong> on a task</li>
                         </ul>
                         <p><small>( <a class="parens" href="https://www.nngroup.com/articles/response-times-3-important-limits/" target="_blank">https://www.nngroup.com/articles/response-times-3-important-limits/</a> )</small></p>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Frame Rate (FPS/Hz)</h2>
-                        <p>FPS during any transition.</p>
+                        <h2 class="slide-title">User Expectations Have Risen</h2>
                         <ul>
-                            <li>Current standard is <span class="emph">60 Hz</span></li>
+                            <li>Users expect <span class="emph">60 Hz</span> during transitions</li>
                             <li><span class="emph">200 Hz</span> seems to be the human limit</li>
-                            <li>Simon Cook: <span class="emph">84 Hz</span> eye jelly fluctuations</li>
+                            <li>Simon Cooke: <span class="emph">84 Hz</span> <a href="https://www.extremetech.com/extreme/196406-retinal-jiggles-why-your-eyes-and-brain-strongly-prefer-games-at-60-fps" target="_blank">retina fluctuations</a></li>
                             <li>Diminishing returns at about <span class="emph">60 Hz</span></li>
                             <li>Apple has "ProMotion" devices @ <span class="emph">120 Hz</span></li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Transitional Friction</h2>
-                        <p>It's more than just responsiveness and FPS...</p>
+                        <h2 class="slide-title">Trust / Confidence</h2>
+                        <ul>
+                            <li><strong class="emph">Inconsistency</strong> or <strong class="emph">JANK</strong> lowers user confidence</strong></li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">It's about Consistency</h2>
+                        <h2 class="slide-title">Lastly, It Can Be an Easy Win</h2>
                         <ul>
-                            <li>Inconsitency = JANK</li>
-                            <li>JANK = Broken</li>
-                            <li>Broken = Reduction in Trust</li>
+                            <li>A few approaches are simple to identify and fix</li>
+                            <li>You can form good habits ( think a11y )</li>
+                            <li>It's deeply satisfying</li>
                         </ul>
-                        <p><small>( <span class="parens">Think video game lag... aaaargh, RAGE QUIT!</span> )</small></p>
+                    </section>
+
+                    <section>
+                        <h2 class="slide-title">Is This a Case of Pre-Optimization?</h1>
+                        <ul>
+                            <li>It's more of a best practice</li>
+                        </ul>
                     </section>
 
                 </section>
@@ -282,29 +220,31 @@
                 <section>
 
                     <section data-background="images/title_slide_bg.jpg" data-background-repeat="repeat" data-background-size="300px">
-                        <h1 class="slide-title">Measuring T-Fric</h1>
+                        <h1 class="slide-title">Measuring Transitional Friction</h1>
                     </section>
 
                     <section>
                         <h2 class="slide-title">Visual Inspection</h2>
-                        <p>Click around, look for JANK ( <span class="parens">ie. user testing</span> ).</p>
+                        <p>Click around! ( user testing )</p>
+                        <ul>
+                            <li>Lack of responsiveness</li>
+                            <li>Transition JANK</li>
+                            <li>JANK Scrolling</li>
+                            <li>Anything odd...</li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Scripts / Automation</h2>
-                        <p>Run scripts to detect JANK</p>
-                        <p><small>( <span class="parens" >Dev tools do not expose data to the page... yet!</span> )</small></p>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">Developer Tools</h2>
+                        <h2 class="slide-title">Chrome Developer Tools</h2>
                         <p>Record a perf snapshot!</p>
-                        <img src="images/dev_tools_all.png" class="fragment fade-up"/>
+                        <img src="images/dev_tools_all.png"/>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Pro Tip</h2>
-                        <p>Turn on CPU Throttling / Network Throttling to test mobile devices / slower computers.</p>
+                        <h2 class="slide-title">Chrome Developer Tools</h2>
+                        <img src="images/perf-zoomed.png"/>
+                        <div>Can you spot bad frame rate?</div>
+                        <div>User interaction lag?</div>
                     </section>
 
                 </section>
@@ -312,57 +252,46 @@
                 <section>
 
                     <section data-background="images/title_slide_bg.jpg" data-background-repeat="repeat" data-background-size="300px">
-                        <h1 class="slide-title">Fixing T-Fric</h1>
+                        <h1 class="slide-title">Fixing Transitional Friction</h1>
+                        <h2>What Causes Slow Frame Rate and Interaction Lag?</h2>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Goal Consistent 60 FPS</h2>
-
-                        <ul>
-                            <li>Scrolling</li>
-                            <li>Interacting</li>
-                            <li>Animations</li>
-                        </ul>
-
-                        <p>Why do these cause slow down?</p>
-
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">The "Pixel Pipeline"</h2>
+                        <h2 class="slide-title">Intro to the "Pixel Pipeline"</h2>
+                        <div>How the browser works is important</div>
                         <img src="images/frame-full.png"/>
-                        <p><small>( <a class="parens" href="https://developers.google.com/web/fundamentals/performance/rendering/" target="_blank">https://developers.google.com/web/fundamentals/performance/rendering/</a> )</small></p>
+                        <ul>
+                            <li><a class="parens" href="https://developers.google.com/web/fundamentals/performance/rendering/" target="_blank">Rendering Performance: Paul Lewis</a></li>
+                            <li><a class="parens" href="http://www.david-amador.com/2011/08/hurry-you-only-have-16-ms-to-render-everything/" target="_blank">16 ms to render everything: David Amador</a></li>
+                        </ul>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Pipeline Stages</h2>
+                        <h2 class="slide-title">Pipeline Bottlenecks</h2>
                         <ul>
                             <li>Scripting ( <span class="parens">slow code</span> )</li>
-                            <li>Style Calc ( <span class="parens">many changes</span> )</li>
-                            <li>Layout ( <span class="parens">many cascading areas</span> )</li>
+                            <li>Style Calc ( <span class="parens">many changes / heavy CSS / large DOM</span> )</li>
+                            <li>Layout ( <span class="parens">complex layouts / large DOM</span> )</li>
                             <li>Paint ( <span class="parens">many elements, large images</span> )</li>
-                            <li>Composite ( <span class="parens">many overlapping layers</span> )</li>
+                            <li>Composite ( <span class="parens">many many many layers</span> )</li>
                         </ul>
-                        <p>How do scrolling, interacting, animations effect the pipeline?</p>
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Butter Demo</h2>
-                        <h3>Goal is 60 FPS</h3>
+                        <h2 class="slide-title">Drizzle Butter Demo</h2>
                         <ul>
-                            <li>Scrolling</li>
-                            <li>Facet Filtering</li>
+                            <li>Scroll</li>
+                            <li>Check Facet Filter</li>
                             <li>User Search</li>
-                            <li>Viewing User Details</li>
+                            <li>Open User Profile</li>
                         </ul>
                         <p><a href="https://github.com/gitsome/performanceDemo" target="_blank" class="parens">Demo Repo</a> ( <span class="parens">Branch: perf-original</span> )</p>
                     </section>
 
                     <section>
                         <h2 class="slide-title">Profile Time!</h2>
+                        <p><span style="color:gold;">PRO TIP:</span> Turn on CPU Throttling / Network Throttling to test mobile devices / slower computers.</p>
                     </section>
-
-                    <section data-background="images/perf-images/perf-original.png" data-background-size="100% 100%"></section>
 
                     <section>
                         <h2 class="slide-title">Analysis</h2>
@@ -370,15 +299,25 @@
                             <li>Slow during facet filtering</li>
                             <li>Slow during name search</li>
                             <li>Really JANKY during scroll</li>
-                            <li>Viewing user details decent</li>
+                            <li>Viewing user details not terrible</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="slide-title">Items to Address</h2>
+                        <ul>
+                            <li>Agregious Scripting Issues</li>
+                            <li>Bad Design</li>
+                            <li>Scrolling Issues</li>
+                            <li>Animation Issues</li>
+                            <li>Advanced Scripting Methods</li>
                         </ul>
                     </section>
 
                     <section>
                         <h2 class="slide-title">Scripting Pass One</h2>
                         <ul>
-                            <li>Check search/filter algorithms</li>
-                            <li>Angular Watches</li>
+                            <li><a href="https://github.com/gitsome/performanceDemo/compare/e5eb004..d6d18f7" target="_blank">Framework / Library Misuse (Angular Watches)</a></li>
                         </ul>
                     </section>
 
@@ -396,7 +335,7 @@
                     <section>
                         <h2 class="slide-title">Scripting Pass Two</h2>
                         <ul>
-                            <li>Introduce Pagination</li>
+                            <li><a href="https://github.com/gitsome/performanceDemo/compare/d6d18f7..7250669" target="_blank">Introduce Pagination</a></li>
                         </ul>
                     </section>
 
@@ -412,10 +351,6 @@
                             <li>Much better during scroll</li>
                             <li>Viewing user details decent</li>
                         </ul>
-                    </section>
-
-                    <section>
-                        <h2 class="slide-title">Scrolling</h2>
                     </section>
 
                     <section>
@@ -441,8 +376,12 @@
                         <pre><code>transform: translate3d(0,0,0);</code></pre>
                     </section>
 
-                    <section data-background="images/can_use_will_change.png" data-background-size="contain"></section>
-                    <section data-background="images/can_use_transform.png" data-background-size="contain"></section>
+                    <section>
+                        <h2 class="slide-title">Scrolling Fixes</h2>
+                        <ul>
+                            <li><a href="https://github.com/gitsome/performanceDemo/compare/9a91684..05ce0bb" target="_blank">Remove paint inducing logic on scroll</a></li>
+                        </ul>
+                    </section>
 
                     <section>
                         <h2 class="slide-title">Analysis</h2>
@@ -467,7 +406,7 @@
                         <h2 class="slide-title">Animation Tips</h2>
                         <ul>
                             <li>DO NOT animate properties that effect layout</li>
-                            <li>Avoid when possible properties that effect paint</li>
+                            <li>Avoid properties that effect paint</li>
                             <li>DO animate properties that do not effect layout or paint</li>
                         </ul>
                     </section>
@@ -483,7 +422,7 @@
                     <section>
                         <h2 class="slide-title">Fixing Rendering</h2>
                         <ul>
-                            <li>Stop animating width!</li>
+                            <li><a href="https://github.com/gitsome/performanceDemo/compare/05ce0bb..a11293f" target="_blank">Stop animating width!</a></li>
                         </ul>
                     </section>
 
@@ -495,7 +434,7 @@
                     <section>
                         <h2 class="slide-title">Fixing Painting</h2>
                         <ul>
-                            <li>Use Composite Only Properties</li>
+                            <li><a href="https://github.com/gitsome/performanceDemo/compare/a11293f..68f6717" target="_blank">Use Composite Only Properties</a></li>
                         </ul>
                     </section>
 
@@ -528,7 +467,13 @@
                     </section>
 
                     <section>
-                        <h2 class="slide-title">Goal No <span style="color:red;">RED!</span></h2>
+                        <h2 class="slide-title">How can we get rid of the <span style="color:red;">RED</span>?</h2>
+                        <img src="images/perf-images/perf-final.png"/>
+                    </section>
+
+                    <section>
+                        <h2 class="slide-title">Web Workers</h2>
+                        <p>Enables multi-threading in the browser.</p>
                     </section>
 
                     <section>
@@ -550,14 +495,14 @@
                         <p>Pre-compiled byte code... ultra fast...</p>
                     </section>
 
-                    <section>
-                        <h2 class="slide-title">Web Workers</h2>
-                        <p>Enables multi-threading in the browser.</p>
-                    </section>
-
                 </section>
 
                 <section>
+
+                    <section>
+                        <h2 class="slide-title">Quiz</h2>
+                        <p class="fragment fade-up">What were the 5 things we looked at to improve Transitional Friction?</p>
+                    </section>
 
                     <section data-background="images/title_slide_bg.jpg" data-background-repeat="repeat" data-background-size="300px">
                         <h1 class="slide-title">References</h1>
@@ -596,8 +541,8 @@
                     </section>
 
                     <section>
-                        <h2 class="slide-title">The End?</h2>
-                        <h3 class="fragment fade-up">Yes.</h3>
+                        <h2 class="slide-title">The End</h2>
+                        <h3 class="slide-title">Thank you!</h3>
                     </section>
 
                 </section>

@@ -47,6 +47,10 @@ body {
   background-color: #fff;
   color: #000; }
 
+.reveal h2 {font-size: 125% !important;}
+.reveal h3 {font-size: 85% !important; opacity: 0.75;}
+.reveal blockquote {padding: 15px !important; box-shadow: inset 0px 0px 25px 0px rgba(255,255,255, 0.35) !important;}
+
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
